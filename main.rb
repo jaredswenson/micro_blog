@@ -2,16 +2,15 @@ require 'sinatra'
 require 'sinatra/activerecord'
 require 'bundler/setup'
 require 'sinatra/flash'
-require 'shotgun'
-# enable :sessions
+enable :sessions
 
-# set :database, 'sqlite3:blog.sqlite3'
-# set :sessions, true
+set :database, 'sqlite3:blog.sqlite3'
+set :sessions, true
 
-# require './models'
+require './models'
 
 get '/' do
-
+	erb :home
 end
 
 get '/create_acct' do
@@ -27,14 +26,14 @@ post '/create_account' do
 	@user = User.create(params)
 	session[:user_id] = @user.id
 	flash[:notice] = "You were successfully logged in!"
-	erb :user_home
+	erb :home
 end
 
-# def current_user
-# 	if session[:user_id]
-# 		User.find(session[:user_id])
-# 	end
-# end
+def current_user
+	if session[:user_id]
+		User.find(session[:user_id])
+	end
+end
 
 post '/sign_in' do
 @user = User.where(email: params[:email]).first 
@@ -45,10 +44,10 @@ post '/sign_in' do
  	puts "no user was found"
  	flash[:alert] = "There was a problem signing you in."   
  end   
- redirect '/user_home'
+ redirect '/'
 end
 
-# post '/sign_out' do
-# 	session[:user_id] = nil
-# 	redirect '/sign_in'
-# end
+post '/sign_out' do
+	session[:user_id] = nil
+	redirect '/sign_in'
+end
