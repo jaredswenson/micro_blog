@@ -1,1 +1,72 @@
-main.css
+body{
+	background-color: #263959;
+}
+
+header{
+	background-color: #55967e;
+	width: 95%;
+	height: auto;
+	color: #e4e7ec;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.headbuttons{
+	display: inline;
+	float: right;
+	margin-top: 4px;
+	margin-right: 4px;
+}
+
+.button{
+	background-color: #263959;
+	height: auto;
+	width: auto; 
+	font-size: 20px;
+	color: #e4e7ec;
+	border-radius: 5px;
+}
+
+#welcome{
+	display: inline;
+	font-size: 40px;
+	margin-left: 40%;
+}
+
+#sign_in{
+	background-color: #55967e;
+	border-radius: 10px;
+	color: #e4e7ec;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#create{
+	background-color: #55967e;
+	color: #e4e7ec;
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+#newaccount{
+	width: 128px;
+	margin: 10px auto;
+}
+
+
+input{
+	width: 100%;
+	height: 20px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.form{
+	width: 75%;
+	margin: 0 auto;
+}
+
+.blog{
+	color: #e4e7ec;
+}
