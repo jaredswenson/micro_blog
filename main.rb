@@ -21,6 +21,18 @@ get '/sign_in' do
 	erb :sign_in
 end
 
+get '/settings' do
+	erb :settings
+end
+
+get '/edit_acct' do
+	erb :edit_acct
+end
+
+get '/new_post' do
+	erb :new_post
+end
+
 post '/create_account' do
 	puts "these are the params: #{params.inspect}"
 	@user = User.create(params)
