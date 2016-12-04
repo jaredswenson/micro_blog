@@ -1,1 +1,25 @@
-create_acct.erb
+<div align="center" class="blog">
+	<h1>Start Micro Blogging Today!</h1>
+</div>
+
+<form action="/create_account" id="create" method="POST">
+	<div class="form">
+		<label for="fname">First Name</label>
+		<br>
+		<input type="text" name="fname" placeholder="First Name">
+		<br>
+		<label for="lname">Last Name</label>
+		<br>
+		<input type="text" name="lname" placeholder="Last Name">
+		<br>
+		<label for="email">Email</label>
+		<br>
+		<input type="text" name="email" placeholder="Email">
+		<br>
+		<label for="password">Password</label>
+		<br>
+		<input type="password" name="password" placeholder="Password">
+		<br>
+		<input class="button" type="submit" value="Create Account">
+	</div>
+</form>
