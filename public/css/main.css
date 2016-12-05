@@ -3,10 +3,10 @@
 body{
 	background-color: #263959;
 }
-
+     
 header{
 	background-color: #92AEFE;
-	width: 100%;
+	width: 97%;
 	height: 100px;
 	color: black;
 	margin: 0 auto;
@@ -99,10 +99,16 @@ input:hover{
 	background-color: #55967e;
 	color: #e4e7ec;
 	width: 50%;
-	margin: 0 auto;
 	border-radius: 10px;
 	font-family: raleway;
 	padding: 20px 1px 10px 1px;
+	position: absolute;
+	top: 250px;
+	left: 350px;
+}
+
+#accountForm h1{
+	margin-left: 30px;
 }
 
 #fname{
@@ -159,11 +165,13 @@ input:hover{
 #new_posts_box{
 	background-color: #55967e;
 	color: #e4e7ec;
-	width: 50%;
-	margin: 0 auto;
+	width: 40%;
 	border-radius: 10px;
 	font-size: raleway;
 	padding: 20px 1px 10px 1px;
+	position: absolute;
+	top: 215px;
+	left: 60px;
 }
 
 .newPosts h1{
@@ -172,13 +180,13 @@ input:hover{
 }
 
 #postbuttons{
-	margin-left: 175px;
+	margin-left: 30px;
 }
 
 #commentbox{
-	height:200px;
+	height:215px;
 	width:500px;
-	margin-left: 105px;
+	margin-left: 30px;
 	font-family: raleway;
 	font-size: 25px;
 }
@@ -194,7 +202,7 @@ input:hover{
 }
 
 #profilebuttons{
-	margin-left: 165px;
+	margin-left: 30px;
 }
 
 .profile_page h1{
@@ -210,6 +218,33 @@ input:hover{
 	top: 220px;
 	left: 750px;
 	box-shadow: 0px 0px 10px 10px #22F90C;
+}
+
+#profileForm h1{
+	margin-left: 30px;
+}
+
+#allPosts{
+	background-color: #55967e;
+	width: 45%;
+	height: 700px;
+	position: absolute;
+	top: 230px;
+	left: 715px;
+	box-shadow: 0px 0px 10px 10px #22F90C;
+}
+
+#editAccountButton{
+	width: 100%;
+	height: 20px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	font-size: 25px;
+	font-family: raleway;
+}
+
+#myAccountButtons{
+	margin-left: 30px;
 }
 
 
