@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161203174416) do
+ActiveRecord::Schema.define(version: 20161205211608) do
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "message",     limit: 150
+    t.integer  "user_id"
+    t.datetime "timecreated"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "fname"
