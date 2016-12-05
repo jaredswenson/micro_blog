@@ -9,7 +9,7 @@ set :sessions, true
 
 require './models'
 
-get '/' do
+get '/' do 
 	erb :home
 end
 
@@ -19,6 +19,18 @@ end
 
 get '/sign_in' do
 	erb :sign_in
+end
+
+get '/settings' do
+	erb :settings
+end
+
+get '/edit_acct' do
+	erb :edit_acct
+end
+
+get '/new_post' do
+	erb :new_post
 end
 
 post '/create_account' do

@@ -1,1 +1,25 @@
-edit_acct.erb
+<div align="center" class="editAccount">
+	<h1>Need to edit your account information?</h1>
+</div>
+<div id="edit_account"> 
+	<div id="editforms">
+		<form action="/edit_acct" method="POST">
+			<label for="fname">First Name</label>
+			<br>
+			<input type="text" name="fname" placeholder="First Name">
+			<br>
+			<label for="lname">Last Name</label>
+			<br>
+			<input type="text" name="lname" placeholder="Last Name">
+			<br>
+			<label for="email">Email</label>
+			<br>
+			<input type="text" name="email" placeholder="Email">
+			<br>
+			<label for="password">Password</label>
+			<br>
+			<input type="password" name="password" placeholder="Password">
+			<input class="button" type="submit" value="Submit Changes">
+		</form>
+	</div>
+</div>

@@ -1,19 +1,4 @@
-
-#accountbox{
-	width: 60%;
-	height: 525px;
-	float: left;
-	padding: 50px 50px 300px 50px;
-	background-color:#898E89;
-	color: black;
-	position: absolute;
-	border-radius: 15px;
-	margin-bottom: 500px
-	font-family: Raleway;
-	top: 150px;
-	left: 250px;
-	box-shadow: 0px 0px 10px 10px #22F90C;
-}
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 
 body{
 	background-color: #263959;
@@ -22,17 +7,28 @@ body{
 header{
 	background-color: #55967e;
 	width: 95%;
-	height: auto;
+	height: 100px;
 	color: #e4e7ec;
 	margin: 0 auto;
 	border-radius: 10px;
+	margin-top: 15px;
+	padding: 10px 15px 10px 15px;
 }
 
 .headbuttons{
 	display: inline;
 	float: right;
 	margin-top: 4px;
-	margin-right: 4px;
+	margin-right: 4px; 
+}
+
+#head{
+	font-family: raleway;
+}
+
+#head h1{
+	position: absolute;
+	top: 20px;
 }
 
 .button{
@@ -56,6 +52,7 @@ header{
 	color: #e4e7ec;
 	width: 50%;
 	margin: 0 auto;
+	padding: 20px 1px 10px 1px;
 }
 
 #create{
@@ -64,6 +61,8 @@ header{
 	width: 50%;
 	margin: 0 auto;
 	border-radius: 10px;
+	padding: 20px 1px 10px 1px;
+	font-family: raleway;
 }
 
 #newaccount{
@@ -71,12 +70,17 @@ header{
 	margin: 10px auto;
 }
 
-
 input{
 	width: 100%;
 	height: 20px;
 	margin-top: 1%;
 	margin-bottom: 1%;
+	font-size: 25px;
+	font-family: raleway;
+}
+
+input:hover{
+	background-color: #2117EE;
 }
 
 .form{
@@ -86,4 +90,96 @@ input{
 
 .blog{
 	color: #e4e7ec;
+	font-family: raleway;
 }
+
+#accountForm{
+	background-color: #55967e;
+	color: #e4e7ec;
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 10px;
+	font-family: raleway;
+	padding: 20px 1px 10px 1px;
+}
+
+#fname{
+	font-size: 25px;
+	margin-left: 50px;
+}
+
+#lname{
+	font-size: 25px;
+	margin-left: 50px;
+}
+
+#email{
+	font-size: 25px;
+	margin-left: 50px;
+}
+
+#edit_account{
+	background-color: #55967e;
+	color: #e4e7ec;
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 10px;
+	font-size: raleway;
+}
+
+#settingbuttons{
+	margin-left: 110px;
+}
+
+#editforms{
+	width: 75%;
+	margin-left: 90px;
+	font-family: raleway;
+	padding: 20px 1px 10px 1px;
+}
+
+.accountInfo{
+	font-family: raleway;
+}
+
+.accountInfo h1{
+	color: #e4e7ec;
+}
+
+.editAccount{
+	font-family: raleway;
+}
+
+.editAccount h1{
+	color: #e4e7ec;
+}
+
+#new_posts_box{
+	background-color: #55967e;
+	color: #e4e7ec;
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 10px;
+	font-size: raleway;
+	padding: 20px 1px 10px 1px;
+}
+
+.newPosts h1{
+	font-family: raleway;
+	color: #e4e7ec;
+}
+
+#postbuttons{
+	margin-left: 175px;
+}
+
+#commentbox{
+	height:200px;
+	width:500px;
+	margin-left: 105px;
+	font-family: raleway;
+	font-size: 25px;
+}
+
+
+
