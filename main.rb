@@ -33,6 +33,10 @@ get '/new_post' do
 	erb :new_post
 end
 
+get '/profile' do
+	erb :profile
+end
+
 post '/create_account' do
 	puts "these are the params: #{params.inspect}"
 	@user = User.create(params)
