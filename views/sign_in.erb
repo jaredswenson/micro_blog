@@ -12,8 +12,9 @@
 		<br>
 		<input type="password" name="password" placeholder="password">
 		<br>
+		<%= flash[:alert] if flash[:alert] %>
 		<input class="button" type="submit" value="Sign In">
-		<a href="create_acct"><input class="button" type="button" value="Create Account"></a>
+		<a href="create_account"><input class="button" type="button" value="Create Account"></a>
 	</div>
 </form>
 

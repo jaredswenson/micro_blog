@@ -10,15 +10,19 @@ set :sessions, true
 require './models'
 
 get '/' do 
-	erb :home
-end
-
-get '/create_acct' do
-	erb :create_acct
+	erb :sign_in
 end
 
 get '/sign_in' do
 	erb :sign_in
+end
+
+get '/profile' do
+	erb :profile
+end
+
+get '/create_account' do
+	erb :create_acct
 end
 
 get '/settings' do
@@ -33,8 +37,8 @@ get '/new_post' do
 	erb :new_post
 end
 
-get '/profile' do
-	erb :profile
+get '/my_account' do
+	erb :myAccount
 end
 
 post '/create_account' do
@@ -42,7 +46,7 @@ post '/create_account' do
 	@user = User.create(params)
 	session[:user_id] = @user.id
 	flash[:notice] = "You were successfully logged in!"
-	erb :home
+	erb :profile
 end
 
 def current_user
@@ -55,12 +59,13 @@ post '/sign_in' do
 @user = User.where(email: params[:email]).first 
   if @user && @user.password == params[:password]   
     session[:user_id] = @user.id    
-    flash[:notice] = "You've been signed in successfully."  
+    flash[:notice] = "You've been signed in successfully." 
+    redirect '/profile' 
  else     
  	puts "no user was found"
- 	flash[:alert] = "There was a problem signing you in."   
+ 	flash[:alert] = "There was a problem signing you in."  
+ 	redirect '/sign_in' 
  end   
- redirect '/'
 end
 
 post '/sign_out' do
