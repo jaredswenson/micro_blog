@@ -18,15 +18,12 @@ get '/sign_in' do
 end
 
 get '/profile' do
+	@user = current_user
 	erb :profile
 end
 
 get '/create_account' do
 	erb :create_acct
-end
-
-get '/settings' do
-	erb :settings
 end
 
 get '/edit_acct' do
@@ -37,7 +34,8 @@ get '/new_post' do
 	erb :new_post
 end
 
-get '/my_account' do
+get '/myAccount' do
+	@user = current_user
 	erb :myAccount
 end
 
@@ -59,7 +57,6 @@ post '/sign_in' do
 @user = User.where(email: params[:email]).first 
   if @user && @user.password == params[:password]   
     session[:user_id] = @user.id    
-    flash[:notice] = "You've been signed in successfully." 
     redirect '/profile' 
  else     
  	puts "no user was found"
