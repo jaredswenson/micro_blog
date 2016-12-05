@@ -5,15 +5,15 @@
 	<div id="profileForm"> 
 		<form action="/profile" method="POST">
 			<div>
-				<label id="fname" for="fname">firstname</label>
+				<h1><%= @user.fname %></h1>
 			</div>
 			<div>
-				<label id="lname" for="lname">lastname</label>
+				<h1><%= @user.lname %></h1>
 			</div>
 			<div id="profile_posts_box"></div>
 			<div id="profilebuttons">
-				<input class="button" type="submit" value="New Post">
-				<input class="button" type="submit" value="Settings">
+				<a href="new_post"><input class="button" type="button" value="New Post"></a>
+				<a href="myAccount"><input class="button" type="button" value="Settings"></a>
 			</div>
 		</form>
 	</div>

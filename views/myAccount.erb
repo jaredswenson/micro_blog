@@ -2,24 +2,16 @@
 	<div id="accountForm">
 		<form action="/form" method="POST">
 			<div>
-				<label id="name" for="name">Name:</label>
-				<input type="text" id= "input1" placeholder="Name" name="username">
+				<h1><%= @user.fname + " " + @user.lname%></h1>
 			</div>
 			<div>
-				<label id="email" for="email">Email:</label>
-				<input type="text" id= "input2" placeholder="Email" name="email">
+				<h1><%= @user.email %></h1>
 			</div>
 			<div>
-				<button id="signOutButton" type="submit" value="Sign Out">
+				<button id="editAccountButton" type="button" value="Edit Account">
 			</div>
 			<div>
-				<button id="editAccountButton" type="submit" value="Edit Account">
-			</div>
-			<div>
-				<button id="profileButton" type="submit" value="Profile Page">
-			</div>
-			<div>
-				<button id="deleteAccountButton" type="submit" value="Delete Account">
+				<button id="deleteAccountButton" type="button" value="Delete Account">
 			</div>
 		</form>
 	</div>
