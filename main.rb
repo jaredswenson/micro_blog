@@ -69,3 +69,7 @@ post '/sign_out' do
 	session[:user_id] = nil
 	redirect '/sign_in'
 end
+
+post '/post' do
+	Post.create(message: params[:message], timecreated: Time.now)
+end
