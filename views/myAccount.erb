@@ -17,8 +17,20 @@
 				
 				<form action="/delete_accont" method="POST">
 				<div id="postbuttons"> 
-					<input class="button" type="submit" value="Delete Account">
+				<button id="submit" type="button">Delete Account</button>
+				<input id="hiddenbutton" type="submit" value="Delete Account">
 				</div>			
 			</form>
 	</div>
+</div>
+
+<div id="myModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div id="modal" class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+     Delete Account!
+     <input id="delete" type="button" value="Delete Account">
+     Keep Account!
+     <button id="cancel" type="button">Go Back</button>
+    </div>
+  </div>
 </div>
