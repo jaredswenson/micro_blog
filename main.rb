@@ -19,10 +19,12 @@ end
 
 get '/profile' do
 	@user = current_user
+	@posts = @user.posts.order(timecreated: :desc).limit(10)
 	erb :profile
 end
 
 get '/create_account' do
+	session[:user_id] = nil
 	erb :create_acct
 end
 
@@ -31,6 +33,7 @@ get '/edit_acct' do
 end
 
 get '/new_post' do
+	@posts = current_user.posts
 	erb :new_post
 end
 
@@ -44,7 +47,7 @@ post '/create_account' do
 	@user = User.create(params)
 	session[:user_id] = @user.id
 	flash[:notice] = "You were successfully logged in!"
-	erb :profile
+	redirect '/profile'
 end
 
 def current_user
@@ -59,8 +62,7 @@ post '/sign_in' do
     session[:user_id] = @user.id    
     redirect '/profile' 
  else     
- 	puts "no user was found"
- 	flash[:alert] = "There was a problem signing you in."  
+ 	flash[:alert] = "Invalid Email or Password"  
  	redirect '/sign_in' 
  end   
 end
@@ -70,6 +72,18 @@ post '/sign_out' do
 	redirect '/sign_in'
 end
 
-post '/post' do
-	Post.create(message: params[:message], timecreated: Time.now)
+post '/new_post' do
+	Post.create(message: params[:message], timecreated: Time.now, user_id: current_user.id)
+	redirect '/new_post'
+end
+
+post '/delete_accont' do
+	current_user.delete
+	session[:user_id] = nil
+	redirect '/create_account'
+end
+
+post '/edit' do
+	current_user.update_attributes(params)
+	redirect '/change_account'
 end

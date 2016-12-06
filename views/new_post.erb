@@ -3,14 +3,21 @@
 </div>
 <div id="postBox">            
 	<div id="new_posts_box">
-		<form action="/new_posts" method="POST">
+		<form action="/new_post" method="POST">
 			<div>
 				<textarea id="commentbox" type="text" placeholder="Post" name="message"></textarea>
 			</div>
 			<div id="postbuttons">
 				<input class="button" type="submit" value="Submit Post">
+			<div id="postbuttons"> 
+				<input class="button" type="submit" value="Save Post">
 			</div>			
 		</form>
 	</div>
 </div>
-<div id="allPosts"></div>
+<div id="allPosts">
+	<% @posts.each do |post| %>
+		<h3><%= post.message %></h3>
+		<p><%= post.timecreated %></p>
+	<% end %>
+</div>

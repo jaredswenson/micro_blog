@@ -3,7 +3,6 @@
 </div>
 <div id="accountBox">
 	<div id="accountForm">
-		<form action="/form" method="POST">
 			<div>
 				<h1><%= @user.fname + " " + @user.lname%></h1>
 			</div>
@@ -17,5 +16,16 @@
 				<input class="button" id="button2" type="button" value="Delete Account">
 			</div>
 		</form>
+				<form action="/edit_account" method="POST">
+					<div id="postbuttons"> 
+						<input class="button" type="submit" value="Edit Account">
+					</div>
+				</form>
+				
+				<form action="/delete_accont" method="POST">
+				<div id="postbuttons"> 
+					<input class="button" type="submit" value="Delete Account">
+				</div>			
+			</form>
 	</div>
 </div>
