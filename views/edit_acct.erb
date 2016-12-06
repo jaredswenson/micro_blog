@@ -5,15 +5,15 @@
 	<div id="editforms">
 		<form action="/edit_info" method="POST">
 			<label for="fname">First Name</label>
-			<br>
+			<p><%= @user.fname %></p>
 			<input type="text" name="fname" placeholder="">
 			<br>
 			<label for="lname">Last Name</label>
-			<br>
+			<p><%= @user.lname %></p>
 			<input type="text" name="lname" placeholder="">
 			<br>
 			<label for="email">Email</label>
-			<br>
+			<p><%= @user.email %></p>
 			<input type="text" name="email" placeholder="">
 			<br>
 			<label for="password">Password</label>

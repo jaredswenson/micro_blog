@@ -30,6 +30,7 @@ get '/create_account' do
 end
 
 get '/edit_acct' do
+	@user = current_user
 	erb :edit_acct
 end
 
