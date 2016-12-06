@@ -5,16 +5,13 @@
 	<div id="editforms">
 		<form action="/edit_info" method="POST">
 			<label for="fname">First Name</label>
-			<p><%= @user.fname %></p>
-			<input type="text" name="fname" placeholder="">
+			<input type="text" name="fname" placeholder=<%= @user.fname %>>
 			<br>
 			<label for="lname">Last Name</label>
-			<p><%= @user.lname %></p>
-			<input type="text" name="lname" placeholder="">
+			<input type="text" name="lname" placeholder=<%= @user.lname %>>
 			<br>
 			<label for="email">Email</label>
-			<p><%= @user.email %></p>
-			<input type="text" name="email" placeholder="">
+			<input type="text" name="email" placeholder=<%= @user.email %>>
 			<br>
 			<label for="password">Password</label>
 			<br>

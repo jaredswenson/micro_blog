@@ -98,7 +98,7 @@ end
 
 post '/edit_info' do
 	current_user.update_attributes(params)
-	redirect '/profile'
+	redirect '/edit_acct'
 end
 
 post '/edit_acct' do
