@@ -193,6 +193,7 @@ input:hover{
 	top: 215px;
 	left: 60px;
 	height: auto;
+	box-shadow: 0px 0px 10px 10px #22F90C;
 }
 
 .newPosts h1{
@@ -252,12 +253,11 @@ input:hover{
 #allPosts{
 	background-color: #55967e;
 	width: 45%;
-	height: 700px;
-	position: absolute;
-	top: 230px;
-	left: 715px;
+	margin-top: 45px;
+	margin-left: 700px;
 	box-shadow: 0px 0px 10px 10px #22F90C;
 	min-height: 300px;
+	height: auto;
 }
 
 #editAccountButton{
@@ -332,7 +332,7 @@ input:hover{
 }
 
 #hiddenbutton{
-
+	display: none;
 }
 
 
