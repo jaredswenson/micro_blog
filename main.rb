@@ -83,9 +83,9 @@ post '/delete_accont' do
 	redirect '/create_account'
 end
 
-post '/edit' do
+post '/edit_info' do
 	current_user.update_attributes(params)
-	redirect '/change_account'
+	redirect '/profile'
 end
 
 post '/edit_acct' do
