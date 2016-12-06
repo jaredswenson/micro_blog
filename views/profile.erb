@@ -10,7 +10,12 @@
 			<div>
 				<h1><%= @user.lname %></h1>
 			</div>
-			<div id="profile_posts_box"></div>
+			<div id="profile_posts_box">
+				<% @posts.each do |post| %>
+					<h3><%= post.message %></h3>
+					<p><%= post.timecreated %></p>
+				<% end %>
+			</div>
 			<div id="profilebuttons">
 				<a href="new_post"><input class="button" type="button" value="New Post"></a>
 				<a href="myAccount"><input class="button" type="button" value="Settings"></a>
