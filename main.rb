@@ -87,3 +87,7 @@ post '/edit' do
 	current_user.update_attributes(params)
 	redirect '/change_account'
 end
+
+post '/edit_acct' do
+	redirect '/edit_acct'
+end
