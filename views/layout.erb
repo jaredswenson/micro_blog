@@ -4,7 +4,6 @@
 		<title></title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="icon" type="img/png" href="img/bird2.png">
 		<!-- <script type="text/javascript">
 			$(document).ready(function() {
 			    
@@ -30,7 +29,7 @@
 		<h2 id="name"><mark>squawker</mark></h2>
 		<h1 id="welcome">Squawk Your Mind!</h1>
 		<div class="logo">
-			<img src="images/bird2.png">
+			<img src="<%= request.base_url%>/images/bird2.png">
 		</div>		
 		<div class="headbuttons">
 		</div>
@@ -49,7 +48,7 @@
 			<% end %>
 		</div>
 	</header>
-    <img id="b" src="images/bird3.png" style="position:absolute; top:450px"></img>
+    <img id="b" src="<%= request.base_url%>/images/bird3.png" style="position:absolute; top:450px"></img>
 	</body>
 			<%= yield %>
 	</body>
