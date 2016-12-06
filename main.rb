@@ -57,10 +57,17 @@ end
 
 post '/create_account' do
 	puts "these are the params: #{params.inspect}"
-	@user = User.create(params)
-	session[:user_id] = @user.id
-	flash[:notice] = "You were successfully logged in!"
-	redirect '/profile'
+	if User.where(email: params[:email]).first
+		puts "There was a user with that"
+		flash[:alert] = "Email Already In Use" 
+		redirect '/create_account'
+	else
+		@user = User.create(params)
+		session[:user_id] = @user.id
+		puts "there was not a user with that"
+		flash[:alert] = "Valid Email" 
+		redirect '/profile' 
+	end 
 end
 
 def current_user

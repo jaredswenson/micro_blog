@@ -96,10 +96,13 @@ input{
 	margin-bottom: 1%;
 	font-size: 25px;
 	font-family: raleway;
+	background-color: black;
+	color: white;
 }
 
 input:hover{
 	background-color: #554CFE;
+	color: white;
 }
 
 .form{
@@ -116,7 +119,7 @@ input:hover{
 	background-color: #55967e;
 	color: #e4e7ec;
 	width: 40%;
-	height: 180px;
+	height: auto;
 	border-radius: 5px;
 	font-family: raleway;
 	padding: 1px 1px 10px 1px;
@@ -341,6 +344,7 @@ input:hover{
 	display: none;
 }
 
+
 a#allusersposts{
 	color: white;
 }
@@ -358,7 +362,18 @@ a#allusersposts{
 	color: white;
 }
 
+#delete{
+	background-color: white;
+	color: red;
+	width: auto;
+	height: auto;
 
+}
+
+#delete:hover{
+	background-color: red;
+	color: black;
+}
 
 
 
