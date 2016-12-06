@@ -4,17 +4,31 @@
 		<title></title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="icon" type="img/png" href="img/logo.png">
+		<link rel="icon" type="img/png" href="img/bird2.png">
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    
+			    function birdLeft() {
+			        $("#b").animate({left: "-=800"}, 2000, "swing", birdRight);
+			    }
+			    function birdRight() {
+			        $("#b").animate({left: "+=800"}, 2000, "swing", birdLeft);
+			    }
+			    
+			    birdRight();
+			});
+		</script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
 		<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 	</head>
 	<body>
 	<header id="head">
-		<h1 id="welcome">Speak Your Mind!</h1>
+		<h2 id="name"><mark>squawker</mark></h2>
+		<h1 id="welcome">Squawk Your Mind!</h1>
 		<div class="logo">
-				<img src="images/logo.png">
-		</div>	
+			<img src="images/bird2.png">
+		</div>		
 		<div class="headbuttons">
 		</div>
 		<div class="headbuttons">		
@@ -31,6 +45,8 @@
 			<% end %>
 		</div>
 	</header>
+    <img id="b" src="images/bird3.png" style="position:absolute; top:450px"></img>
+	</body>
 			<%= yield %>
 	</body>
 </html>
