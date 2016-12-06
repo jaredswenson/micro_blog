@@ -42,8 +42,14 @@ get '/myAccount' do
 	erb :myAccount
 end
 
+get '/users/:id' do
+	@user = User.find(params[:id])
+	@posts = @user.posts.order(timecreated: :desc).limit(10)
+	erb :users
+end
+
 get '/all_users' do
-	@user = User.all
+	@users = User.all
 	erb :all_users
 end
 

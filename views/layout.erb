@@ -1,15 +1,16 @@
+<% home_path = "http://localhost:4567" %>
 <!DOCTYPE html>
 <html>
 	<head>
 		<title></title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="icon" type="img/png" href="img/logo.png">
-		<script type="text/javascript" src="js/main.js"></script>
-		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-		<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="<%= request.base_url%>/css/main.css">
+		<link rel="icon" type="img/png" href="<%= request.base_url%>/img/logo.png">
+		<script type="text/javascript" src="<%= request.base_url%>/js/main.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</head>
-	<body>
+	<body id="body">
 	<header id="head">
 		<h1 id="welcome">Speak Your Mind!</h1>
 		<div class="logo">
@@ -25,6 +26,7 @@
 				</form>
 				<a href="myAccount"><input class="button" type="button" value="Settings"></a>
 				<a href="profile"><input class="button" type="button" value="Profile Page"></a>
+				<a href="all_users"><input class="button" type="button" value="All Users"></a>
 			<% else %>
 				<a href="sign_in"><input class="button" type="button" value="Sign In"></a>
 				<a href="create_account"><input class="button" type="button" value="Create Account"></a>
