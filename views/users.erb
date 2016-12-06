@@ -1,0 +1,11 @@
+<div id="profile_posts_box">
+	<h1><%= @user.fname + " " + @user.lname %></h1>
+	<% if @user.posts %>
+		<% @user.posts.each do |post| %>
+			<h3><%= post.message %></h3>
+			<p><%= post.timecreated %></p>
+		<% end %>
+	<% else %>
+		<h3>No Posts</h3>
+	<% end %>
+</div>
