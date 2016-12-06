@@ -37,15 +37,15 @@
 		<div class="headbuttons">		
 		<div class="headbuttons">
 			<% if current_user %>
-				<form action="/sign_out" method="POST">
+				<form action="<%= request.base_url%>/sign_out" method="POST">
 					<input class="button" type="submit" value="Sign Out">
 				</form>
-				<a href="myAccount"><input class="button" type="button" value="Settings"></a>
-				<a href="profile"><input class="button" type="button" value="Profile Page"></a>
-				<a href="all_users"><input class="button" type="button" value="All Users"></a>
+				<a href="<%= request.base_url%>/myAccount"><input class="button" type="button" value="Settings"></a>
+				<a href="<%= request.base_url%>/profile"><input class="button" type="button" value="Profile Page"></a>
+				<a href="<%= request.base_url%>/all_users"><input class="button" type="button" value="All Users"></a>
 			<% else %>
-				<a href="sign_in"><input class="button" type="button" value="Sign In"></a>
-				<a href="create_account"><input class="button" type="button" value="Create Account"></a>
+				<a href="<%= request.base_url%>/sign_in"><input class="button" type="button" value="Sign In"></a>
+				<a href="<%= request.base_url%>/create_account"><input class="button" type="button" value="Create Account"></a>
 			<% end %>
 		</div>
 	</header>
