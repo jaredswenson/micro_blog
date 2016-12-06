@@ -10,6 +10,7 @@ set :sessions, true
 require './models'
 
 get '/' do 
+	session[:user_id] = nil
 	erb :sign_in
 end
 
