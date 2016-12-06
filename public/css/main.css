@@ -243,7 +243,10 @@ input:hover{
 	left: 750px;
 	box-shadow: 0px 0px 10px 10px #22F90C;
 	height: auto;
+	border-radius: 5px;
+	min-height: 100px;
 	margin-top: -10px;
+
 }
 
 #profileForm h1{
@@ -258,6 +261,9 @@ input:hover{
 	box-shadow: 0px 0px 10px 10px #22F90C;
 	min-height: 300px;
 	height: auto;
+	border-radius: 5px;
+	padding: 10px 1px 10px 1px;
+	color: white;
 }
 
 #editAccountButton{
@@ -335,6 +341,22 @@ input:hover{
 	display: none;
 }
 
+a#allusersposts{
+	color: white;
+}
+
+#allusersPosts{
+	height: auto;
+	background-color: #55967e;
+	width: 45%;
+	margin-top: 45px;
+	margin-left: 700px;
+	box-shadow: 0px 0px 10px 10px #22F90C;
+	min-height: 300px;
+	border-radius: 5px;
+	padding: 10px 10px 10px 15px;
+	color: white;
+}
 
 
 
