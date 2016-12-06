@@ -96,10 +96,13 @@ input{
 	margin-bottom: 1%;
 	font-size: 25px;
 	font-family: raleway;
+	background-color: black;
+	color: white;
 }
 
 input:hover{
 	background-color: #554CFE;
+	color: white;
 }
 
 .form{
