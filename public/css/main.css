@@ -338,8 +338,17 @@ input:hover{
 	display: none;
 }
 
+#delete{
+	background-color: white;
+	color: red;
+	width: auto;
+	height: auto;
+}
 
-
+#delete:hover{
+	background-color: red;
+	color: black;
+}
 
 
 
