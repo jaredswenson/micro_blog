@@ -4,6 +4,7 @@
 		<title></title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="icon" type="img/png" href="img/logo.png">
 		<script type="text/javascript" src="js/main.js"></script>
 		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
 		<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
@@ -11,23 +12,23 @@
 	<body>
 	<header id="head">
 		<h1 id="welcome">Speak Your Mind!</h1>
+		<div class="logo">
+				<img src="images/logo.png">
+		</div>	
 		<div class="headbuttons">
 		</div>
 		<div class="headbuttons">		
-
 			<% if current_user %>
 				<form action="/sign_out" method="POST">
 					<input class="button" type="submit" value="Sign Out">
 				</form>
 				<a href="myAccount"><input class="button" type="button" value="Settings"></a>
-				<br>
 				<a href="profile"><input class="button" type="button" value="Profile Page"></a>
 			<% else %>
 				<a href="sign_in"><input class="button" type="button" value="Sign In"></a>
 				<a href="create_account"><input class="button" type="button" value="Create Account"></a>
 			<% end %>
 		</div>
-		
 	</header>
 			<%= yield %>
 	</body>

@@ -52,19 +52,21 @@ header{
 	background-color: #55967e;
 	border-radius: 10px;
 	color: #e4e7ec;
-	width: 50%;
+	width: 40%;
 	margin: 0 auto;
 	padding: 20px 1px 10px 1px;
+	box-shadow: 0px 0px 10px 10px #22F90C;
 }
 
 #create{
 	background-color: #55967e;
 	color: #e4e7ec;
-	width: 50%;
+	width: 40%;
 	margin: 0 auto;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 20px 1px 10px 1px;
 	font-family: raleway;
+	box-shadow: 0px 0px 10px 10px #22F90C;
 }
 
 #newaccount{
@@ -87,7 +89,7 @@ input:hover{
 
 .form{
 	width: 75%;
-	margin: 0 auto;
+	margin-left: 30px;
 }
 
 .blog{
@@ -98,13 +100,15 @@ input:hover{
 #accountForm{
 	background-color: #55967e;
 	color: #e4e7ec;
-	width: 50%;
-	border-radius: 10px;
+	width: 40%;
+	height: 180px;
+	border-radius: 5px;
 	font-family: raleway;
-	padding: 20px 1px 10px 1px;
+	padding: 1px 1px 10px 1px;
 	position: absolute;
-	top: 250px;
-	left: 350px;
+	top: 220px;
+	left: 420px;
+	box-shadow: 0px 0px 10px 10px #22F90C;
 }
 
 #accountForm h1{
@@ -129,10 +133,11 @@ input:hover{
 #edit_account{
 	background-color: #55967e;
 	color: #e4e7ec;
-	width: 50%;
+	width: 40%;
 	margin: 0 auto;
 	border-radius: 10px;
 	font-size: raleway;
+	box-shadow: 0px 0px 10px 10px #22F90C;
 }
 
 #settingbuttons{
@@ -141,7 +146,7 @@ input:hover{
 
 #editforms{
 	width: 75%;
-	margin-left: 90px;
+	margin-left: 30px;
 	font-family: raleway;
 	padding: 20px 1px 10px 1px;
 }
@@ -166,12 +171,13 @@ input:hover{
 	background-color: #55967e;
 	color: #e4e7ec;
 	width: 40%;
-	border-radius: 10px;
+	border-radius: 5px;
 	font-size: raleway;
 	padding: 20px 1px 10px 1px;
 	position: absolute;
 	top: 215px;
 	left: 60px;
+	min-height: 300px;
 }
 
 .newPosts h1{
@@ -196,9 +202,10 @@ input:hover{
 	color: #e4e7ec;
 	width: 40%;
 	margin-left: 75px;
-	border-radius: 10px;
+	border-radius: 5px;
 	font-size: raleway;
-	padding: 20px 1px 10px 1px;
+	padding: 1px 1px 10px 1px;
+	box-shadow: 0px 0px 10px 10px #22F90C;
 }
 
 #profilebuttons{
@@ -218,6 +225,7 @@ input:hover{
 	top: 220px;
 	left: 750px;
 	box-shadow: 0px 0px 10px 10px #22F90C;
+	min-height: 300px;
 }
 
 #profileForm h1{
@@ -232,6 +240,7 @@ input:hover{
 	top: 230px;
 	left: 715px;
 	box-shadow: 0px 0px 10px 10px #22F90C;
+	min-height: 300px;
 }
 
 #editAccountButton{
@@ -247,8 +256,30 @@ input:hover{
 	margin-left: 30px;
 }
 
+.myAccount h1{
+	font-family: raleway;
+	color: #e4e7ec;
+}
 
+#button1{
+	position: absolute;
+	top: 130px;
+	left: 30px;
+}
 
+#button2{
+	position: absolute;
+	top: 130px;
+	left: 175px;
+}
+
+.logo img {
+	width: 175px;
+	height: 160px;
+	position: absolute;
+	top: -5px;
+	left: 20px;
+}
 
 
 
