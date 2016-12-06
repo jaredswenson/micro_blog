@@ -312,9 +312,18 @@ input:hover{
 	margin-left: 30px;
 }
 
+#myModal{
+	background: black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 50%;
+	margin: 5% auto;
+}
 
+#hiddenbutton{
 
-
+}
 
 
 
