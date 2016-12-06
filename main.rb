@@ -42,6 +42,11 @@ get '/myAccount' do
 	erb :myAccount
 end
 
+get '/all_users' do
+	@user = User.all
+	erb :all_users
+end
+
 post '/create_account' do
 	puts "these are the params: #{params.inspect}"
 	@user = User.create(params)
