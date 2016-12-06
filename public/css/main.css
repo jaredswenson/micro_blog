@@ -116,7 +116,7 @@ input:hover{
 	background-color: #55967e;
 	color: #e4e7ec;
 	width: 40%;
-	height: 180px;
+	height: auto;
 	border-radius: 5px;
 	font-family: raleway;
 	padding: 1px 1px 10px 1px;
