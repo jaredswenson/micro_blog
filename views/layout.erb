@@ -33,7 +33,7 @@
 		<div class="headbuttons">
 			<% if current_user %>
 				<form action="<%= request.base_url%>/sign_out" method="POST">
-					<input class="button" type="submit" value="Sign Out">
+					<input class="button" id="signoutbutton" type="submit" value="Sign Out">
 				</form>
 				<a href="<%= request.base_url%>/myAccount"><input class="button" type="button" value="Settings"></a>
 				<a href="<%= request.base_url%>/profile"><input class="button" type="button" value="Profile Page"></a>
