@@ -374,7 +374,7 @@ a#allusersposts{
 	background-color: white;
 	color: red;
 	width: auto;
-	height: auto;
+	height: auto; 
 }
 
 #delete:hover{
