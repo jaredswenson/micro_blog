@@ -8,5 +8,18 @@ $(document).ready(function () {
 	$('#cancel').on('click', function() { // cancel button in modal
 		$('#myModal').modal('hide');
 	});
-
+	$('#commentbox').on('keyup', totalCharacters);
+	function totalCharacters() {
+		var minchar = 0;
+		var maxchar = 150;
+		var commentbox = $('#commentbox');
+		var count = parseInt(commentbox.val().length);
+		var diff = maxchar - count;
+		$('#count').text(diff); 
+		if (diff < minchar) {
+			$('#submitpost').attr('disabled', true).css('background-color', 'red'); 
+		} else {
+			$('#submitpost').attr('disabled', true).css('background-color', '#22F90C')
+		}
+	}
 });
