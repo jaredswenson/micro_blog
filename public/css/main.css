@@ -17,7 +17,7 @@ header{
 .headbuttons{
 	display: inline;
 	float: right;
-	margin-top: -55px;
+	margin-top: 0px;
 	margin-right: 5px;
 	width: 450px; 
 }
@@ -34,7 +34,7 @@ header{
 
 #head h2{
 	position: absolute;
-	top: 10px;
+	top:25px;
 	margin-left: 150px;
 	font-size: 30px;
 	margin-top: 1px;
@@ -42,7 +42,7 @@ header{
 	font-size: 70px;
 	margin-bottom: 15px;
 	margin-left: 550px;
-	font-size: 50px;
+	font-size: 70px;
 }
 
 .button{
