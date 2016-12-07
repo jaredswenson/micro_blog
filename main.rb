@@ -70,21 +70,15 @@ post '/create_account' do
 	end 
 end
 
-def current_user
-	if session[:user_id]
-		User.find(session[:user_id])
-	end
-end
-
 post '/sign_in' do
-@user = User.where(email: params[:email]).first 
-  if @user && @user.password == params[:password]   
-    session[:user_id] = @user.id    
-    redirect '/profile' 
- else     
- 	flash[:alert] = "Invalid Email or Password"  
- 	redirect '/sign_in' 
- end   
+	@user = User.where(email: params[:email]).first 
+	if @user && @user.password == params[:password]   
+		session[:user_id] = @user.id    
+		redirect '/profile' 
+	else     
+		flash[:alert] = "Invalid Email or Password"  
+		redirect '/sign_in' 
+	end   
 end
 
 post '/sign_out' do
@@ -110,4 +104,10 @@ end
 
 post '/edit_acct' do
 	redirect '/edit_acct'
+end
+
+def current_user
+	if session[:user_id]
+		User.find(session[:user_id])
+	end
 end

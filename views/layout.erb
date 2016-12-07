@@ -27,13 +27,9 @@
 	<body id="body">
 	<header id="head">
 		<h2 id="name"><mark>squawker</mark></h2>
-		<h1 id="welcome">Squawk Your Mind!</h1>
 		<div class="logo">
 			<img src="<%= request.base_url%>/images/bird2.png">
-		</div>		
-		<div class="headbuttons">
-		</div>
-		<div class="headbuttons">		
+		</div>				
 		<div class="headbuttons">
 			<% if current_user %>
 				<form action="<%= request.base_url%>/sign_out" method="POST">
