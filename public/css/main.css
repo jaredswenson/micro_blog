@@ -17,8 +17,9 @@ header{
 .headbuttons{
 	display: inline;
 	float: right;
-	margin-top: 4px;
-	margin-right: 4px; 
+	margin-top: -55px;
+	margin-right: 5px;
+	width: 450px; 
 }
 
 #head{
@@ -31,10 +32,17 @@ header{
 }
 
 #head h2{
+<<<<<<< Updated upstream
 	position: absolute;
 	top: 10px;
 	margin-left: 150px;
 	font-size: 30px;
+=======
+	margin-top: 1px;
+	margin-left: 505px;
+	font-size: 70px;
+
+>>>>>>> Stashed changes
 }
 
 .button{
@@ -300,11 +308,11 @@ input:hover{
 }
 
 .logo img {
-	width: 150px;
-	height: 150px;
+	width: 175px;
+	height: 175px;
 	position: absolute;
 	top: 1px;
-	left: 5px;
+	left: 15px;
 }
 
 .logo2 img {
@@ -367,7 +375,6 @@ a#allusersposts{
 	color: red;
 	width: auto;
 	height: auto;
-
 }
 
 #delete:hover{
@@ -385,4 +392,10 @@ a#allusersposts{
 	margin-left: 165px;
 }
 
-
+.headbuttons form{
+	display: inline;
+	margin: 0 5px;
+}
+form input#signoutbutton{
+	display: inline;
+}
