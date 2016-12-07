@@ -27,8 +27,9 @@ header{
 }
 
 #head h1{
-	position: absolute;
-	top: 20px;
+	top: 50px;
+	left:-400px;
+	font-size: 25px;
 }
 
 #head h2{
@@ -39,6 +40,9 @@ header{
 	margin-top: 1px;
 	margin-left: 505px;
 	font-size: 70px;
+	margin-bottom: 15px;
+	margin-left: 550px;
+	font-size: 50px;
 }
 
 .button{
