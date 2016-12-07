@@ -19,7 +19,7 @@ $(document).ready(function () {
 		if (diff < minchar) {
 			$('#submitpost').attr('disabled', true).css('background-color', 'red'); 
 		} else {
-			$('#submitpost').attr('disabled', true).css('background-color', '#22F90C')
+			$('#submitpost').attr('disabled', false).css('background-color', '#22F90C')
 		}
 	}
 });
