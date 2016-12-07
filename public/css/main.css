@@ -32,17 +32,13 @@ header{
 }
 
 #head h2{
-<<<<<<< Updated upstream
 	position: absolute;
 	top: 10px;
 	margin-left: 150px;
 	font-size: 30px;
-=======
 	margin-top: 1px;
 	margin-left: 505px;
 	font-size: 70px;
-
->>>>>>> Stashed changes
 }
 
 .button{
