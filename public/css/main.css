@@ -222,6 +222,7 @@ input:hover{
 	margin-left: 30px;
 	font-family: raleway;
 	font-size: 25px;
+	background-color: black;
 }
 
 #profileBox{
@@ -399,3 +400,4 @@ a#allusersposts{
 form input#signoutbutton{
 	display: inline;
 }
+
